@@ -148,8 +148,7 @@
         {
             "Path": "MyProject/Gem",
             "Uuid": "8637e686e8394c85a4823a27ffa57418",
-            "Version": "0.1.0",
-            "_comment": "MyProject"
+            "Version": "0.1.0"
         },
         {
             "Path": "Gems/ScriptCanvas",
@@ -192,6 +191,12 @@
             "Uuid": "c7935ecf5e8047fe8ca947b34b11cadb",
             "Version": "0.1.0",
             "_comment": "LyShineExamples"
+        },
+        {
+            "Path": "Gems/Multiplayer",
+            "Uuid": "d3ed407a19bb4c0d92b7c4872313d600",
+            "Version": "1.0.0",
+            "_comment": "Multiplayer"
         },
         {
             "Path": "Gems/PrimitiveAssets",
