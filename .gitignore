@@ -149,3 +149,5 @@ dev/MyProject/AWS/local-project-settings.json
 dev/Editor/editorlayout.xml
 dev/Editor/editoreventlog.xml
 dev/MyProject/Levels/Simple/_savebackup/
+dev/Bin64vc141.Test/
+dev/Tools/LmbrSetup/Win.vc141.Profile.Test/
