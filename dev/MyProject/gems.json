@@ -199,6 +199,12 @@
             "_comment": "PrimitiveAssets"
         },
         {
+            "Path": "Gems/MultiplayerCharacter",
+            "Uuid": "ef30c7d985bd4150b75452a44b4744ca",
+            "Version": "0.1.0",
+            "_comment": "MultiplayerCharacter"
+        },
+        {
             "Path": "Gems/CryEntityRemoval",
             "Uuid": "f3ae24a1635e4f849535f37ef9f4b4da",
             "Version": "0.1.0",
