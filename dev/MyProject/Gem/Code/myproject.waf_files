@@ -13,6 +13,8 @@
             "Source/OscillatorComponent.h",
             "Source/StartingMapSystemComponent.cpp",
             "Source/StartingMapSystemComponent.h",
+            "Source/TransformSyncComponent.cpp",
+            "Source/TransformSyncComponent.h",
             "Source/MyProjectSystemComponent.cpp",
             "Source/MyProjectSystemComponent.h"
         ]
