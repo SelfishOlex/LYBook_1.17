@@ -135,9 +135,9 @@
 									</Class>
 									<Class name="CryPlayerPhysicsConfiguration" field="Configuration" version="1" type="{97A1C07E-0444-4FAC-A394-8317AFE5696B}">
 										<Class name="PlayerDimensions" field="Player Dimensions" version="1" type="{64B9DBDA-90D4-4D3D-88EA-36810AF2C98F}">
-											<Class name="bool" field="Use Capsule" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+											<Class name="bool" field="Use Capsule" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
 											<Class name="float" field="Collider Radius" value="0.4000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
-											<Class name="float" field="Collider Half-Height" value="1.3000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="float" field="Collider Half-Height" value="2.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
 											<Class name="float" field="Height Collider" value="1.1000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
 											<Class name="float" field="Height Pivot" value="0.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
 											<Class name="float" field="Height Eye" value="1.7000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
