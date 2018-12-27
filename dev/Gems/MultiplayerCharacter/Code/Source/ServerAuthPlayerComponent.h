@@ -18,6 +18,12 @@ namespace MultiplayerCharacter
             NetBindable);
         static void Reflect(AZ::ReflectContext* context);
 
+        void GetRequiredServices(
+            AZ::ComponentDescriptor::DependencyArrayType& req)
+        {
+            req.push_back(AZ_CRC("PlayerActionRelayService"));
+        }
+
         GridMate::ReplicaChunkPtr GetNetworkBinding() override;
         void SetNetworkBinding(
             GridMate::ReplicaChunkPtr chunk) override;
