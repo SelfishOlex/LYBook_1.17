@@ -6,8 +6,9 @@ def build(bld):
     gem_node = bld.path.find_or_declare('MyProject/Gem/Code')
     script_canvas_dir = driver_node.path_from(gem_node)
 
-    AZ_CODEGEN_ARGS = az_code_gen = [{
+    AZ_CODEGEN_ARGS = [{
                 'files'   : [
+                    'Source/ScriptCanvas/MyIncrementNode.h',
                     'Source/ScriptCanvas/MyScriptCanvasNode.h',
                 ],
                 'scripts' : [
