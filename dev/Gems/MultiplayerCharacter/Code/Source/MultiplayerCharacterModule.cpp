@@ -9,6 +9,7 @@
 #include <PlayerControlsComponent.h>
 #include <TimedProjectileComponent.h>
 #include <PebbleSpawnerComponent.h>
+#include <FootstepComponent.h>
 
 namespace MultiplayerCharacter
 {
@@ -30,6 +31,7 @@ namespace MultiplayerCharacter
                 PlayerControlsComponent::CreateDescriptor(),
                 TimedProjectileComponent::CreateDescriptor(),
                 PebbleSpawnerComponent::CreateDescriptor(),
+                FootstepComponent::CreateDescriptor(),
             });
         }
 
