@@ -16,7 +16,9 @@
             "Source/TransformSyncComponent.cpp",
             "Source/TransformSyncComponent.h",
             "Source/MyProjectSystemComponent.cpp",
-            "Source/MyProjectSystemComponent.h"
+            "Source/MyProjectSystemComponent.h",
+            "Source/MyUIStatusComponents.cpp",
+            "Source/MyUIStatusComponents.h"
         ]
     }
 }
