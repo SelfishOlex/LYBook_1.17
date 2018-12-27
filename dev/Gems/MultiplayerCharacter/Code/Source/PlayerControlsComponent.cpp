@@ -5,8 +5,10 @@
 #include <AzCore/Component/TransformBus.h>
 #include <MultiplayerCharacter/PebbleSpawnerComponentBus.h>
 #include <LmbrCentral/Physics/PhysicsComponentBus.h>
+#include <Integration/AnimGraphComponentBus.h>
 
 using namespace AZ;
+using namespace EMotionFX;
 using namespace MultiplayerCharacter;
 
 void PlayerControlsComponent::Activate()
@@ -74,6 +76,13 @@ void PlayerControlsComponent::Turn(float amount)
 {
     m_rotZ = amount * m_turnSpeed;
     SetRotation();
+
+    using AnimBus = Integration::AnimGraphComponentRequestBus;
+    AnimBus::Event(GetEntityId(),
+        &AnimBus::Events::SetNamedParameterFloat, "TurnSpeed",
+        (m_prevTurn - amount) * 100);
+
+    m_prevTurn = amount;
 }
 
 void PlayerControlsComponent::Shoot (ActionState state)
@@ -141,4 +150,9 @@ void PlayerControlsComponent::OnTick(
     CryCharacterPhysicsRequestBus::Event(GetEntityId(),
         &CryCharacterPhysicsRequestBus::Events::RequestVelocity,
         direction, 0);
+
+    using AnimBus = Integration::AnimGraphComponentRequestBus;
+    AnimBus::Event(GetEntityId(),
+        &AnimBus::Events::SetNamedParameterFloat, "Speed",
+        direction.GetLengthSq() > 0 ? 10.f : 0.f);
 }
