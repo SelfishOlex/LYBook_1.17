@@ -13,6 +13,8 @@
 #include <MyScriptHelperComponent.h>
 #include <MyScriptSystemComponent.h>
 #include <ScriptCanvas/MyNodeLibrary.h>
+#include <LargeWorld/PlayerAoIComponent.h>
+#include <LargeWorld/PointOfInterestComponent.h>
 
 namespace MyProject
 {
@@ -42,6 +44,12 @@ namespace MyProject
                 MyUIStrafeRightComponent::CreateDescriptor(),
 
                 MyScriptSystemComponent::CreateDescriptor(),
+
+                PlayerAoIComponent::CreateDescriptor(),
+                PointOfInterestComponent::CreateDescriptor(),
+
+                // enabling interest management
+                AzFramework::InterestManagerComponent::CreateDescriptor(),
             });
 
             const auto desc =
@@ -59,6 +67,7 @@ namespace MyProject
                 azrtti_typeid<MyProjectSystemComponent>(),
                 azrtti_typeid<StartingMapSystemComponent>(),
                 azrtti_typeid<MyScriptSystemComponent>(),
+                azrtti_typeid<AzFramework::InterestManagerComponent>(),
             };
         }
     };
